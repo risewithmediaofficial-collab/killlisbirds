@@ -31,10 +31,11 @@ const App = () => {
       
       {/* Above-the-fold content: loaded immediately */}
       <Navbar />
-      <Hero />
       
-      {/* Below-the-fold content: lazy loaded & smooth scroll wrapper */}
       <ScrollStack>
+        <Hero />
+
+        {/* Below-the-fold content: lazy loaded & smooth scroll wrapper */}
         <SmoothScroll>
           <Suspense fallback={<SectionLoader />}>
             <Company />

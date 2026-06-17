@@ -344,6 +344,12 @@
 
   .scroll-stack-root {
     isolation: isolate;
+    overflow: visible;
+  }
+
+  .scroll-stack-section {
+    overflow: hidden;
+    transform: translateZ(0);
   }
 
   .scroll-stack-card {
@@ -351,6 +357,40 @@
     backface-visibility: hidden;
     transform-style: preserve-3d;
     will-change: transform, filter;
+    transition: box-shadow 0.25s ease;
+  }
+
+  .scroll-stack-root section:not(:first-child),
+  .scroll-stack-root footer,
+  .scroll-stack-root .scroll-video-container {
+    margin-top: -1px;
+  }
+
+  .scroll-stack-root .img-accent,
+  .scroll-stack-root [class*="aspect-"] {
+    max-height: min(520px, 58vh);
+  }
+
+  .scroll-stack-root .img-accent img,
+  .scroll-stack-root [class*="aspect-"] > img,
+  .scroll-stack-root [class*="aspect-"] > canvas {
+    min-height: 100%;
+  }
+
+  .scroll-stack-root .scroll-video-container {
+    min-height: 100vh;
+  }
+
+  @media (max-width: 1023px) {
+    .scroll-stack-root .scroll-stack-card {
+      transform: none !important;
+      filter: none !important;
+    }
+
+    .scroll-stack-root .img-accent,
+    .scroll-stack-root [class*="aspect-"] {
+      max-height: none;
+    }
   }
 
   .scroll-reveal-text .word {

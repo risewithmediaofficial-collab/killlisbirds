@@ -15,8 +15,8 @@ export const ScrollStackItem = ({ children, itemClassName = '' }) => (
 const ScrollStack = ({
   children,
   className = '',
-  selector = '[data-stack-section]',
-  itemScale = 0.035,
+  selector = 'section, footer, .scroll-video-container, [data-stack-section]',
+  itemScale = 0.018,
   rotationAmount = 0,
   blurAmount = 0,
   minWidth = 1024
@@ -39,6 +39,7 @@ const ScrollStack = ({
         section.firstElementChild ||
         section;
 
+      section.classList.add('scroll-stack-section');
       panel.classList.add('scroll-stack-card');
       panel.style.willChange = 'transform, filter';
       section.style.zIndex = String(sections.length - index);
@@ -59,13 +60,13 @@ const ScrollStack = ({
 
       cards.forEach(({ section, panel, index }) => {
         const rect = section.getBoundingClientRect();
-        const start = viewportHeight * 0.9;
-        const end = viewportHeight * 0.18;
+        const start = viewportHeight * 0.92;
+        const end = viewportHeight * 0.22;
         const rawProgress = (start - rect.top) / (start - end);
         const progress = Math.max(0, Math.min(1, rawProgress));
-        const scale = 1 - progress * itemScale * index;
+        const scale = Math.max(0.94, 1 - progress * itemScale * index);
         const rotation = rotationAmount ? progress * rotationAmount * index : 0;
-        const lift = progress * -10 * index;
+        const lift = progress * -6 * index;
         const blur = blurAmount ? Math.min(progress * blurAmount * index, blurAmount * 2) : 0;
 
         panel.style.transform = `translate3d(0, ${lift}px, 0) scale(${scale}) rotate(${rotation}deg)`;
@@ -98,6 +99,7 @@ const ScrollStack = ({
         panel.style.filter = '';
         panel.style.willChange = '';
         panel.classList.remove('scroll-stack-card');
+        section.classList.remove('scroll-stack-section');
         section.style.zIndex = '';
       });
     };

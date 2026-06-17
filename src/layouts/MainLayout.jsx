@@ -19,11 +19,11 @@ const MainLayout = () => (
     <main style={{ paddingTop: '72px' }}>
       <ScrollStack>
         <Outlet />
+        <Suspense fallback={<SectionLoader />}>
+          <Footer />
+        </Suspense>
       </ScrollStack>
     </main>
-    <Suspense fallback={<SectionLoader />}>
-      <Footer />
-    </Suspense>
   </>
 );
 
