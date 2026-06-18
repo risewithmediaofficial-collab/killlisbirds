@@ -420,7 +420,7 @@ const Home = () => {
           TRUST
         </ParallaxWatermark>
         <div className="max-w-content mx-auto px-6 md:px-8 relative z-10">
-          <SectionHeader eyebrow="Testimonials" title="Voices of" orangeTitle="Trust" centered />
+          <SectionHeader eyebrow="" title="Voices of" orangeTitle="Trust" centered />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
             {voices.map((v, i) => (

@@ -42,15 +42,12 @@ const Hero = () => {
   }, []);
 
   return (
-    <section ref={heroRef} className="relative flex min-h-screen items-center justify-center overflow-hidden bg-black px-4 pt-[76px] sm:px-6">
+    <section ref={heroRef} className="relative min-h-screen overflow-hidden bg-black pt-[76px]">
       <HeroBackground />
       <div className="grid-pattern absolute inset-0 z-10 text-white/5" />
 
-      <div className="relative z-20 mx-auto mt-14 flex max-w-4xl flex-col items-center px-2 text-center sm:mt-16 sm:px-6 md:mt-20 md:px-8">
-        <div className="hero-eyebrow eyebrow justify-center text-skyroot max-sm:mb-3 max-sm:text-[10px]">
-          Imagine · Ideate · Innovate
-        </div>
-
+      {/* Top-left: Title */}
+      <div className="absolute left-0 top-[76px] z-20 px-6 pt-10 sm:px-10 sm:pt-14 md:px-16 md:pt-16 lg:px-20 lg:pt-20">
         <AnimatedTitle
           as="h1"
           segments={[
@@ -60,20 +57,23 @@ const Hero = () => {
             { text: 'Innovation' },
             { text: 'Delivered.', className: 'text-white/70' }
           ]}
-          className="hero-heading mb-3 sm:mb-4"
-          textClassName="font-heading font-bold text-center text-white leading-[0.9]"
-          textStyle={{ fontSize: 'clamp(1.85rem, 6.7vw, 4.1rem)', letterSpacing: '-0.04em' }}
+          className="hero-heading mb-0"
+          textClassName="font-heading font-bold text-left text-white leading-[0.9]"
+          textStyle={{ fontSize: 'clamp(2rem, 6.5vw, 4.5rem)', letterSpacing: '-0.03em', wordSpacing: '0.05em' }}
           baseOpacity={0.16}
           baseRotation={1.5}
           blurStrength={9}
         />
+      </div>
 
-        <p className="hero-body max-w-[36rem] text-center text-sm leading-relaxed text-white/80 sm:text-base md:text-body-lg">
+      {/* Bottom-right: Body + Buttons */}
+      <div className="absolute bottom-0 right-0 z-20 flex flex-col items-center gap-5 px-6 pb-14 text-center sm:px-10 sm:pb-16 md:items-end md:px-16 md:pb-20 md:text-right lg:px-20 lg:pb-24">
+        <p className="hero-body max-w-[30rem] text-sm leading-relaxed tracking-wide text-white/80 sm:text-base md:text-body-lg">
           Redefining unmanned aerial systems through innovative, indigenous solutions
           designed to elevate performance and reliability.
         </p>
 
-        <div className="hero-btns mt-7 flex w-full flex-col items-center justify-center gap-3 sm:mt-8 sm:w-auto sm:flex-row sm:flex-wrap sm:gap-4">
+        <div className="hero-btns flex w-full flex-col items-center justify-center gap-3 sm:w-auto sm:flex-row sm:flex-wrap sm:gap-4 md:justify-end">
           <Link to="/creations" className="btn-primary w-full justify-center sm:w-auto">
             Explore Creations <ArrowForwardIcon sx={{ fontSize: 18 }} />
           </Link>
@@ -81,12 +81,10 @@ const Hero = () => {
             Discover Our DNA
           </Link>
         </div>
-
-        <div className="hero-float-badge mt-5 rounded-none border border-white/20 bg-white/10 px-4 py-2 text-center shadow-card backdrop-blur-md sm:mt-6 sm:px-5 sm:py-2.5">
-          <p className="mb-0.5 text-[9px] font-heading font-bold uppercase tracking-widest text-white/60">Built in India</p>
-          <p className="text-xs font-heading font-bold text-skyroot">Trusted Worldwide 🇮🇳</p>
-        </div>
       </div>
+
+      {/* Spacer to maintain min-h-screen */}
+      <div className="min-h-screen" />
     </section>
   );
 };

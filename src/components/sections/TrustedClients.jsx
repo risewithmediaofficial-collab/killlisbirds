@@ -35,7 +35,7 @@ const TrustedClients = () => {
         <div className="max-w-content mx-auto px-6 md:px-8 relative z-10">
           <div className="text-center flex flex-col items-center mb-12">
             <span className="text-xs font-heading font-bold text-skyroot uppercase tracking-widest block mb-2">CLIENT VERDICTS</span>
-            <SectionHeader eyebrow="Testimonials" title="Voices of" orangeTitle="Trust" centered />
+            <SectionHeader eyebrow="" title="Voices of" orangeTitle="Trust" centered />
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">

@@ -549,14 +549,15 @@
   .site-navbar__link {
     color: var(--text-primary);
     display: inline-flex;
-    font-family: var(--font-label);
-    font-size: var(--fs-label);
-    font-weight: 800;
-    letter-spacing: 0.08em;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
     padding: 30px 0;
     position: relative;
     text-decoration: none;
     transition: color 0.22s ease;
+    text-transform: uppercase;
   }
 
   .site-navbar__link::after {

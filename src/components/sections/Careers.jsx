@@ -25,7 +25,7 @@ const Careers = () => {
         {/* Centered Header Block */}
         <div className="text-center flex flex-col items-center mb-16 max-w-3xl mx-auto">
           <span className="text-xs font-heading font-bold text-skyroot uppercase tracking-widest block mb-2">JOIN OUR MISSION</span>
-          <SectionHeader eyebrow="Careers" title="Build the Next" orangeTitle="UAV Generation" centered />
+          <SectionHeader eyebrow="" title="Build the Next" orangeTitle="UAV Generation" centered />
           <ScrollReveal
             containerClassName="mt-2 max-w-3xl"
             textClassName="text-muted text-body-lg text-center leading-relaxed"
