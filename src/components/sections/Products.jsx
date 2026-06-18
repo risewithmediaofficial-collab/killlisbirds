@@ -73,14 +73,14 @@ const Products = () => {
   }, []);
 
   return (
-    <section ref={productsRef} data-stack-section className="section bg-navy-50/50 relative overflow-hidden">
+    <section ref={productsRef} data-stack-section className="bg-navy-50/50 relative overflow-hidden px-6 py-[72px] md:px-8 lg:py-[88px]">
       {/* Background dot pattern */}
       <div className="absolute inset-0 bg-[radial-gradient(#f97316_1px,transparent_1px)] [background-size:24px_24px] opacity-[0.03] pointer-events-none" />
 
       <div className="max-w-content mx-auto px-6 md:px-8 relative z-10">
 
         {/* Centered Header Block */}
-        <div className="text-center flex flex-col items-center mb-16 max-w-3xl mx-auto">
+        <div className="text-center flex flex-col items-center mb-9 max-w-3xl mx-auto lg:mb-11">
           <span className="text-xs font-heading font-bold text-skyroot uppercase tracking-widest block mb-2">OUR OFFERINGS</span>
           <SectionHeader eyebrow="" title="Best" orangeTitle="Creations" centered />
           <ScrollReveal
@@ -98,7 +98,7 @@ const Products = () => {
         </div>
 
         {/* Centered view all button at bottom */}
-        <div className="mt-16 text-center">
+        <div className="mt-10 text-center lg:mt-12">
           <Link to="/creations" className="relative group inline-flex">
             <span className="btn-secondary !rounded-none !border-skyroot/20 hover:!border-skyroot hover:!text-skyroot font-heading font-bold relative z-10 transition-all duration-300">
               View All Creations <ArrowRightAltIcon sx={{ ml: 1, fontSize: 18 }} />

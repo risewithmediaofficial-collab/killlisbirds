@@ -79,7 +79,7 @@ const Company = () => {
   return (
     <>
       {/* Premium Stats Grid */}
-      <section ref={statsRef} data-stack-section className="section bg-white border-b border-border/60 relative">
+      <section ref={statsRef} data-stack-section className="bg-white border-b border-border/60 relative px-6 py-[72px] md:px-8 lg:py-[88px]">
         <div className="max-w-content mx-auto px-6 md:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {stats.map((s, i) => (
@@ -110,19 +110,19 @@ const Company = () => {
       </section>
 
       {/* DNA section */}
-      <section ref={dnaRef} data-stack-section className="section !pb-0 bg-white relative overflow-hidden">
+      <section ref={dnaRef} data-stack-section className="bg-white relative overflow-hidden px-6 pt-[72px] pb-0 md:px-8 lg:pt-[88px]">
         {/* Subtle grid pattern background */}
         <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:24px_24px] opacity-40 pointer-events-none" />
 
         <div className="max-w-content mx-auto px-6 md:px-8 relative z-10">
 
           {/* Centered Header Block */}
-          <div className="text-center flex flex-col items-center mb-16 max-w-3xl mx-auto">
+          <div className="text-center flex flex-col items-center mb-9 max-w-3xl mx-auto lg:mb-11">
             <span className="text-xs font-heading font-bold text-skyroot uppercase tracking-widest block mb-2">WHO WE ARE</span>
             <SectionHeader eyebrow="" title="The DNA of" orangeTitle="Killis Bird" centered />
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center pb-10 lg:pb-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center pb-8 lg:gap-12 lg:pb-10">
 
             <div className="dna-text space-y-6">
               <ScrollReveal containerClassName="dna-reveal-item my-0" textClassName="text-muted text-body-lg leading-relaxed">

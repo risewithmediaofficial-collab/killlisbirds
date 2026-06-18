@@ -88,11 +88,11 @@ const Solutions = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} data-stack-section className="section bg-white relative overflow-hidden">
+    <section ref={sectionRef} data-stack-section className="bg-white relative overflow-hidden px-6 py-[72px] md:px-8 lg:py-[88px]">
       <div className="max-w-content mx-auto px-6 md:px-8 relative z-10">
 
         {/* Centered Header Block */}
-        <div className="text-center flex flex-col items-center mb-16 max-w-3xl mx-auto">
+        <div className="text-center flex flex-col items-center mb-9 max-w-3xl mx-auto lg:mb-11">
           <span className="text-xs font-heading font-bold text-skyroot uppercase tracking-widest block mb-2">CORE CAPABILITIES</span>
           <SectionHeader eyebrow="" title="Industries We" orangeTitle="Empower" centered />
           <ScrollReveal
@@ -106,7 +106,7 @@ const Solutions = () => {
         </div>
 
         {/* Content Row: 2x2 Grid + Image Column */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-9 items-center lg:gap-10">
 
           {/* Left Column: 2x2 Card Grid */}
           <div className="lg:col-span-7">

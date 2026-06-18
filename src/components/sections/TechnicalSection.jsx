@@ -41,7 +41,7 @@ const NewGenImage = () => {
 
 const TechnicalSection = () => {
   return (
-    <section data-stack-section className="section bg-navy-50 relative overflow-hidden">
+    <section data-stack-section className="bg-navy-50 relative overflow-hidden px-4 py-[72px] sm:px-6 md:px-8 lg:py-[88px]">
       <ParallaxWatermark className="left-0 top-1/2 -translate-y-1/2 text-[clamp(4rem,12vw,14rem)] text-navy-200/20" speed={20}>
         A NEW GEN
       </ParallaxWatermark>

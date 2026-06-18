@@ -46,7 +46,7 @@ const Hero = () => {
       <HeroBackground />
       <div className="grid-pattern absolute inset-0 z-10 text-white/5" />
 
-      <div className="relative z-20 mx-auto mt-16 flex max-w-4xl flex-col items-center px-2 text-center sm:mt-20 sm:px-6 md:mt-24 md:px-8">
+      <div className="relative z-20 mx-auto mt-14 flex max-w-4xl flex-col items-center px-2 text-center sm:mt-16 sm:px-6 md:mt-20 md:px-8">
         <div className="hero-eyebrow eyebrow justify-center text-skyroot max-sm:mb-3 max-sm:text-[10px]">
           Imagine · Ideate · Innovate
         </div>
@@ -60,9 +60,9 @@ const Hero = () => {
             { text: 'Innovation' },
             { text: 'Delivered.', className: 'text-white/70' }
           ]}
-          className="hero-heading mb-4 sm:mb-6"
-          textClassName="font-heading font-bold text-center text-white leading-[1.04]"
-          textStyle={{ fontSize: 'clamp(2rem, 8vw, 4.8rem)', letterSpacing: '-0.035em' }}
+          className="hero-heading mb-3 sm:mb-4"
+          textClassName="font-heading font-bold text-center text-white leading-[0.9]"
+          textStyle={{ fontSize: 'clamp(1.85rem, 6.7vw, 4.1rem)', letterSpacing: '-0.04em' }}
           baseOpacity={0.16}
           baseRotation={1.5}
           blurStrength={9}
