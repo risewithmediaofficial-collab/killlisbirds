@@ -70,7 +70,7 @@ const DnaHero = () => {
       aria-labelledby="dna-hero-title"
     >
       <div className="mx-auto grid min-h-[calc(100vh-215px)] w-full max-w-[1380px] grid-cols-[minmax(0,0.42fr)_minmax(0,0.58fr)] items-center gap-10 px-[clamp(20px,5vw,80px)] max-lg:min-h-0 max-lg:grid-cols-1">
-        <div className="relative z-[2] py-8">
+        <div className="relative z-[2] py-8 pl-7 max-sm:pl-5">
           <span className="absolute left-0 top-5 h-[74px] w-[74px] border-l-2 border-t-2 border-[#ff6b00] max-sm:h-12 max-sm:w-12" aria-hidden="true" />
           <h1 id="dna-hero-title" className="font-heading text-[clamp(72px,7vw,120px)] font-normal leading-[0.94] tracking-[-0.07em] text-[#111111] max-sm:text-[clamp(48px,16vw,64px)]" aria-label="Imagine. Ideate. Innovate.">
             <span className="dna-hero-word block">Imagine.</span>
@@ -78,7 +78,7 @@ const DnaHero = () => {
             <span className="dna-hero-word block text-[#ff6b00]">Innovate.</span>
           </h1>
           <p className="dna-hero-reveal mt-7 font-serif text-[clamp(22px,2vw,28px)] italic text-[#11151a] max-sm:text-[21px]">“Where Precision Meets Innovation”</p>
-          <span className="dna-hero-reveal my-7 block h-1 w-[58px] bg-[#ff6b00]" aria-hidden="true" />
+          <span className="dna-hero-reveal my-6 block h-1 w-[58px] bg-[#ff6b00]" aria-hidden="true" />
           <p className="dna-hero-reveal max-w-[545px] text-lg leading-[1.75] text-[#67707d] max-sm:text-base">
             Precision-engineered UAV components and solutions, built to expand the possibilities of aerospace and defence.
           </p>

@@ -27,7 +27,7 @@ const OurDNA = () => {
   useBookScrollEffects(pageRef);
 
   return (
-    <div ref={pageRef} className="overflow-hidden bg-white font-heading text-[#111111]">
+    <div ref={pageRef} className="overflow-hidden bg-white font-sans text-[#111111]">
       <SEO title="Our DNA" description="Killis Bird — Imagine, Ideate, Innovate. Where Precision Meets Innovation." />
       <DnaHero />
       <FoundationSection image={IMG.dna} />

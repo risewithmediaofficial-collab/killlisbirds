@@ -50,7 +50,7 @@ const Careers = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
             <div className="absolute bottom-6 left-6 z-10">
               <span className="text-[9px] font-heading font-bold text-white bg-skyroot px-2.5 py-0.5 rounded-none uppercase tracking-wider">
-                Bengaluru Lab
+                Krishnagiri Lab
               </span>
             </div>
             <CornerBrackets color="#f97316" size="14px" thickness="1.5px" hoverShift />

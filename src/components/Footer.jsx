@@ -88,7 +88,9 @@ const Footer = () => (
             <li className="flex items-start gap-2.5">
               <LocationOnIcon sx={{ fontSize: 16, color: '#f97316', mt: 0.25, flexShrink: 0 }} />
               <span className="text-white/60 text-sm leading-relaxed">
-                Killis Bird Technologies Pvt. Ltd.<br />Bengaluru, Karnataka, India
+                Killis Bird Technologies Pvt. Ltd.<br />Plot No.107,
+Pollupalli SIDCO Industrial Estate,
+Gangasandiram, Krishnagiri 635115
               </span>
             </li>
             <li>
@@ -104,7 +106,7 @@ const Footer = () => (
                 className="flex items-center gap-2.5 text-white/60 hover:text-skyroot text-sm transition-colors"
               >
                 <PhoneIcon sx={{ fontSize: 15, color: '#f97316', flexShrink: 0 }} />
-                +91 80 0000 0000
+                 +91 72007 43683
               </a>
             </li>
           </ul>

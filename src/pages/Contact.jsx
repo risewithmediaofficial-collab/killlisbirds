@@ -17,9 +17,9 @@ import SecondarySectionIntro from '../components/common/SecondarySectionIntro';
 import useBookScrollEffects from '../hooks/useBookScrollEffects';
 
 const contactInfo = [
-  { Icon: LocationOnIcon, label: 'Headquarters', lines: ['Killis Bird Technologies Pvt. Ltd.', 'Bengaluru, Karnataka, India'] },
+  { Icon: LocationOnIcon, label: 'Headquarters', lines: ['Killis Bird Technologies Pvt. Ltd.', 'Plot No.107,Pollupalli SIDCO Industrial Estate, Gangasandiram,Krishnagiri, India'] },
   { Icon: EmailIcon, label: 'Email Us', lines: ['info@killisbird.com', 'sales@killisbird.com'], href: 'mailto:info@killisbird.com' },
-  { Icon: PhoneIcon, label: 'Call Us', lines: ['+91 80 0000 0000'], href: 'tel:+918000000000' },
+  { Icon: PhoneIcon, label: 'Call Us', lines: [' +91 72007 43683'], href: 'tel: +91 72007 43683' },
   { Icon: AccessTimeIcon, label: 'Business Hours', lines: ['Monday – Friday', '9:00 AM – 6:00 PM IST'] },
 ];
 
@@ -114,7 +114,7 @@ const Contact = () => {
 
       <section data-stack-section className="relative overflow-hidden bg-white py-[110px] max-sm:py-[72px]">
         <ParallaxWatermark className="right-0 bottom-0 translate-y-1/4 text-[clamp(8rem,16vw,20rem)] text-[#ff6b00]/[0.06]" speed={15}>IND</ParallaxWatermark>
-        <div className="relative mx-auto w-full max-w-[1380px] px-[clamp(20px,5vw,80px)] text-center"><SecondarySectionIntro eyebrow="Where We Are" title="Based in" highlight="Bengaluru, India" description="At the heart of India's aerospace and technology corridor — building tomorrow's aerial systems, today." centered /></div>
+        <div className="relative mx-auto w-full max-w-[1380px] px-[clamp(20px,5vw,80px)] text-center"><SecondarySectionIntro eyebrow="Where We Are" title="Based in" highlight="Krishnagiri, India" description="At the heart of India's aerospace and technology corridor — building tomorrow's aerial systems, today." centered /></div>
       </section>
     </div>
   );
